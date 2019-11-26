@@ -1,3 +1,5 @@
+//hej
+
 const express = require('express');
 const app = express();
 const exphbs  = require('express-handlebars');
@@ -16,10 +18,15 @@ const otherstuff = "Hello there, this is otherstuff1"
 // set handlebars routes
 app.get('/', function (req, res) {
     res.render('home', {
-      stuff: otherstuffat
+      stuff: otherstuff
     });
 });
 
+
+//create about page routes
+app.get('/about.html', function (req, res) {
+    res.render('about',);
+});
 
 
 
